@@ -9,7 +9,7 @@ function HomePage() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('http://127.0.0.1:8000/api/download', { url, filename }, { responseType: 'blob' });
+            const response = await axios.post('https://api-lnp5.onrender.com/api/download', { url, filename }, { responseType: 'blob' });
             fileDownload(response.data, filename);
             console.log(response.data);  // handle the response as needed
         } catch (error) {
