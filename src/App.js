@@ -13,15 +13,17 @@ function App() {
   return (
     <div className="h-screen flex flex-col">
       <Header />
-      <Adsense
-        client="ca-pub-4492003073919634"
-        slot="8982148777"
-      />
       <Routes className="overflow-auto">
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutUsPage />} />
         <Route path="/contact" element={<ContactUsPage />} />
       </Routes>
+      <Adsense
+        client="ca-pub-4492003073919634"
+        slot="8982148777"
+        style={{ width: 500, height: 300 }}
+        format=""
+      />
       <Footer />
     </div>
   );
