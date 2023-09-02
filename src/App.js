@@ -7,7 +7,6 @@ import HomePage from './HomePage';
 import Footer from './Footer';
 import AboutUsPage from './AboutUsPage';
 import ContactUsPage from './ContactUsPage';
-import { Adsense } from '@ctrl/react-adsense';
 
 function App() {
   return (
@@ -18,12 +17,6 @@ function App() {
         <Route path="/about" element={<AboutUsPage />} />
         <Route path="/contact" element={<ContactUsPage />} />
       </Routes>
-      <Adsense
-        client="ca-pub-4492003073919634"
-        slot="8982148777"
-        style={{ width: 500, height: 300 }}
-        format=""
-      />
       <Footer />
     </div>
   );
