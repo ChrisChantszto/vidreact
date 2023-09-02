@@ -7,11 +7,16 @@ import HomePage from './HomePage';
 import Footer from './Footer';
 import AboutUsPage from './AboutUsPage';
 import ContactUsPage from './ContactUsPage';
+import { Adsense } from '@ctrl/react-adsense';
 
 function App() {
   return (
     <div className="h-screen flex flex-col">
       <Header />
+      <Adsense
+        client="ca-pub-4492003073919634"
+        slot="8982148777"
+      />
       <Routes className="overflow-auto">
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutUsPage />} />
